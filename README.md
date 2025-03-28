@@ -1,72 +1,71 @@
-# shoppingCart
+# Assignment 1
 
-# Getting Started with Create React App
+Follow the steps below to view the HTML page:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 1. Open the Project Folder
 
-## Available Scripts
+- Open the project directory in your **File Explorer**.
 
-In the project directory, you can run:
+### 2. Locate the HTML File
 
-### `npm start`
+- Inside the project folder, locate the HTML file (usually `index.html` or similar).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Open the HTML File in Your Browser
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Double-click the HTML file, and it will automatically open in your default web browser.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Assignment 2
 
-### `npm run build`
+Follow the steps below to get the project up and running:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In the project directory, run the following command to install the necessary dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+### 2. Start the Development Server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once the dependencies are installed, you can start the app by running:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Run Tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the tests, use the following command:
 
-## Learn More
+```bash
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Technical Decisions
 
-### Code Splitting
+### Routing with React Router
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I chose to use **React Router** because it allows seamless navigation between different pages (Main Page, Product Detail Page, Cart Page) without the need for full-page reloads, improving the user experience.
 
-### Analyzing the Bundle Size
+React Router's **dynamic routes** also make it easy to display individual product details, enabling a more fluid and responsive interaction.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### React State Management
 
-### Making a Progressive Web App
+I chose to use **React's `useState` and `useContext`** for state management because they allow the cart data to be updated in real-time, ensuring that the cart icon and its contents reflect changes immediately when items are added or removed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+React's built-in state management tools, like `useState`, are ideal for local component states. If a global state is needed, **Context API** provides an efficient way to share the cart data across different components without the complexity of prop drilling.
 
-### Advanced Configuration
+### Cart Actions (Add, Remove, Update Quantity)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+I chose to implement the ability to **add, remove**, and **update the quantity** of products in the cart because these are the core functionalities required for any e-commerce cart, allowing users to directly interact with the cart and see updates in real-time.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Assumptions Made During the Project
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **No User Authentication**: The project assumes that there is no need for user login/authentication for adding products to the cart and does not include any user-specific data.
