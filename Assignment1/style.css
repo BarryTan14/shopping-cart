@@ -145,6 +145,10 @@ html, body {
     color: #6B7280;
 }
 
+.date.pass {
+    color: #ff545f;
+}
+
 .date.today {
     color: #A654FF;
 }
