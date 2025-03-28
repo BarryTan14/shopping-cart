@@ -69,3 +69,5 @@ I chose to implement the ability to **add, remove**, and **update the quantity**
 # Assumptions Made During the Project
 
 - **No User Authentication**: The project assumes that there is no need for user login/authentication for adding products to the cart and does not include any user-specific data.
+
+- **Confirmation of checkout items**: The project assumes that users will have the flexibility to choose the items they wish to proceed with for checkout, allowing them to select specific products from their cart.
