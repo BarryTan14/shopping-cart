@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="search-container">
+            <div class="logo">
+                <img src="apple.png" alt="Rainbow Apple Logo">
+            </div>
+            <div class="line"></div>
+            <input type="text" placeholder="Search for ...">
+        </div>
+        <div class="user">
+            <div class="user-avatar" style="background-color: #4A9CFF; color: white; display: flex; align-items: center; justify-content: center; font-weight: 500;">AU</div>
+            <span>Analyst User</span>
+        </div>
+    </header>
+
+    <main class="kanban-board">
+        <div class="column">
+            <h2>Backlog</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Nulla volutpat aliquam velit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #4A9CFF">OZ</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Facilisis in pretium nisl aliquet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #E054FF">LE</div>
+                        <span class="date">Two days ago</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Eget porttitor lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #54FFBD">ME</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <h2>Todo</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Eget porttitor lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #A654FF">AM</div>
+                        <span class="date today">Today</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Consectetur adipiscing elit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #4A9CFF">OZ</div>
+                        <span class="date future">In three days</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Nulla volutpat aliquam velit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #E054FF">LE</div>
+                        <span class="date">July 21</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <h2>Done</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Ac tristique libero volutpat at</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #E054FF">LE</div>
+                        <span class="date">A week ago</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Phasellus iaculis neque</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #4A9CFF">OZ</div>
+                        <span class="date">Last Tuesday</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Facilisis in pretium nisl aliquet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat ar..</p>
+                    <div class="card-footer">
+                        <div class="avatar" style="background-color: #A654FF">AM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
